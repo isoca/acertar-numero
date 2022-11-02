@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br"> 
+    <!-- A linguagem aqui era en e trocamos para pt-br -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" 
+    integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" 
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+     <!-- O link de reset (reset css cdn) tem que vir antes do link para o style.css ou reseta tudo-->
+
+     <link rel="stylesheet" 
+     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" 
+     integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" 
+     crossorigin="anonymous" 
+     referrerpolicy="no-referrer" />
+    <!-- Esse aqui vem de font awesome cdn (serve para as flechinhas), mas tem vários ícones -->
+
+     <link rel="stylesheet" href="style.css"/>
+
+    <title>Número Secreto</title>
+</head>
+<body>
+    <!-- Para criar os arquivos direto do terminal: type nul > nome_do_arquivo.html
+        Para abrir e fechar o cmd é CRTL + J
+        Para fechar a aba do lado é CRTL + B
+        Para digitar o básico do html é ! + ENTER (IMPORTANTE) -->
+        <h1>Acerte o número secreto</h1>
+        <h3>O número secreto está entre <span id="menor-valor">0</span> e <span id="maior-valor">100</span></h3>
+
+        <div id="chute" class="mensagem">
+            <div>Você disse:</div>
+            <span class="box">20</span>
+            <div>O número secreto é maior <i class="fa-solid fa-arrow-up"></i> </div>
+        </div>
+        <!-- Digitando #chute.mensagem + TAB, o jogo da velha cria um id e o ponto cria uma classe mensagem
+            Aparentemente isso chama Emmet Abbreviation-->
+</body>
+</html>
