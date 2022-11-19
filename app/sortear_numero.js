@@ -6,8 +6,6 @@ function gerarNumeroAleatorio() {
     return parseInt(Math.random() * maiorValor + 1)
 }
 
-console.log(numeroSecreto)
-
 // pegando os valores dos spans e deixando dinâmico na página
 const elementoMenorValor = document.getElementById('menor-valor')
 elementoMenorValor.innerHTML = menorValor
