@@ -11,7 +11,10 @@ recognition.addEventListener('result', onSpeak)
 function onSpeak(e) {
     console.log(e)
     chute = e.results[0][0].transcript
+    console.log('Exibe o chute')
     exibeChuteNaTela(chute)
+    console.log('Verifica o chute')
+    verificaSeOChutePossuiUmValorValido(chute)
 }
 
 function exibeChuteNaTela(chute) {
@@ -20,3 +23,5 @@ function exibeChuteNaTela(chute) {
         <span class="box">${chute}</span>
     `
 }
+
+recognition.addEventListener('end', () => recognition.start()) // quando função acabar começa de novo
